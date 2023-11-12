@@ -82,21 +82,27 @@ a:focus {
 	font-size: 14px;
 	font-weight: 700;
 }
+
 .btn:hover {
 	background: linear-gradient(90deg, #80E0FF 0%, #BEFFE8 100%);
 }
+
 .btn-two {
 	width: 170px;
 }
+
 main {
 	margin-top: 156px;
 }
+
 .mt-6 {
 	margin-top: 2rem;
 }
+
 .mb-6 {
 	margin-bottom: 2rem;
 }
+
 /* header start */
 .header {
 	position: fixed;
@@ -109,6 +115,7 @@ main {
 	background-size: 90% 100%;
 	background-position: 3px 0px;
 }
+
 .header .navbar-expand-lg .navbar-nav .nav-link {
 	padding: 0;
 	margin-left: 32px;
@@ -117,15 +124,25 @@ main {
 	line-height: 140%;
 }
 
+/* main start */
+
+.news .news-titlee {
+	color: var(--blue, #456DBB);
+	font-size: 24px;
+	font-weight: 700;
+	margin: 35px 0 32px 0;
+}
+
 
 /* media query start */
 @media (min-width: 1440px) {
+
 	.container,
 	.container-lg,
 	.container-md,
 	.container-sm,
 	.container-xl,
-	.container-xxl{
+	.container-xxl {
 		max-width: 1170px;
 		padding-left: 0;
 		padding-right: 0;
