@@ -23,6 +23,10 @@
         <header class="header">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
+                    <div class="header-bg__img">
+                        <img class="bg-img__one" src="images/header-bg__one.svg" alt="bg-img">
+                        <img class="bg-img__two" src="images/header-bg__two.svg" alt="bg-img">
+                    </div>
                     <a class="navbar-brand" href="#!">
                         <img src="images/icons/logo.svg" alt="logo">
                     </a>
@@ -56,23 +60,11 @@
             <!-- news section start -->
             <section class="news">
                 <div class="container">
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                        <div class="container-fluid">
-                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
+                    <div class=" d-flex align-items-center mt- news-top__title" >
+                        <p class="title">Главная</p>
+                        <p class="title-img"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M14 12L10 16V8L14 12Z" fill="#686868"/></svg></p>
+                        <p class="title">Новости</p>
+                    </div>
 
                     <h3 class="news-titlee">Новости</h3>
                     <div class="row mt-6">
@@ -143,6 +135,18 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center slide-title">
+                        <p class="left">←</p>
+                        <p class="number active">1</p>
+                        <p class="number">2</p>
+                        <p class="number">3</p>
+                        <p class="number">...</p>
+                        <p class="number">46</p>
+                        <p class="number">47</p>
+                        <p class="number">48</p>
+                        <p class="right"><img src="images/icons/slide-icon__2.svg" alt="icons"></p>
                     </div>
                 </div>
             </section>
