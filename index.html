@@ -206,7 +206,7 @@
     <!-- Vertically centered modal -->
  
     <!-- Modal -->
-    <div class="modal" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+    <div class="modal" id="authModal" tabindex="-1" aria-labelledby="authModal" aria-hidden="true">
         <div class="modal-dialog text-center ">
             <div class="modal-content">
                 <div class="modal-top">
@@ -225,7 +225,7 @@
                         <button>Войти</button>
                       </div>
                       <div class="btn-link  but mb-6 active">
-                        <button type="button" class="btn-link">Забыли пароль?</button>
+                        <button type="button" class="btn-link" data-bs-toggle="modal" data-bs-target="#passModal">Забыли пароль?</button>
                       </div>
                       <span class=" mb-4">Ещё нет аккаунта?</span>
                       <div class="btn">
@@ -236,35 +236,49 @@
         </div>
     </div>
 
-    <!-- <div class="modal" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+    <div class="modal" id="passModal" tabindex="-1" aria-labelledby="passModal" aria-hidden="true">
         <div class="modal-dialog text-center ">
             <div class="modal-content">
                 <div class="modal-top">
-                    <h1 class="modal-title fs-5" id="authModalLabel">Авторизация</h1>
+                    <h1 class="modal-title fs-5" id="passModalLabel">Забыли пароль?</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                    <div class="text-start">
-                        <label for="formGroupExampleInput" class="form-label tor">E-mail</label>
+                    <div class="text-start mb-6">
+                        <label for="formGroupExampleInput" class="form-label tor">Укажите ваш e-mail</label>
                         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="geek.tanya.hayden@gmail.com">
                       </div>
-                      <div class="mb-6 text-start">
-                        <label for="formGroupExampleInput2" class="form-label rot">Пароль</label>
-                        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="••••••••••••••••">
-                      </div>
                       <div class="btn mb-6">
-                        <button>Войти</button>
-                      </div>
-                      <div class="btn-link  but mb-6 active">
-                        <button type="button" class="btn-link">Забыли пароль?</button>
-                      </div>
-                      <span class=" mb-4">Ещё нет аккаунта?</span>
-                      <div class="btn">
                         <button>Выслать код на смену пароля</button>
+                      </div>
+                      <div class="btn-link mb-6 active">
+                        <button type="button" class="btn-link">Войти по номеру телефона</button>
                       </div>
   
             </div>
         </div>
-    </div> -->
+    </div>
+
+    <div class="modal" id="passModal" tabindex="-1" aria-labelledby="passModal" aria-hidden="true">
+        <div class="modal-dialog text-center ">
+            <div class="modal-content">
+                <div class="modal-top">
+                    <h1 class="modal-title fs-5" id="passModalLabel">Забыли пароль?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                    <div class="text-start mb-6">
+                        <label for="formGroupExampleInput" class="form-label tor">Укажите ваш e-mail</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="geek.tanya.hayden@gmail.com">
+                      </div>
+                      <div class="btn mb-6">
+                        <button>Выслать код на смену пароля</button>
+                      </div>
+                      <div class="btn-link mb-6 active">
+                        <button type="button" class="btn-link">Войти по номеру телефона</button>
+                      </div>
+  
+            </div>
+        </div>
+    </div>
 
     </div>
 

@@ -217,6 +217,8 @@ main {
 /* ======modal====== */
 
 .modal-content{
+	width: 430px;
+	height: 407px;
 	padding: 32px;
 }
 .modal-title{
@@ -227,9 +229,9 @@ main {
 	top: 15px;
 	right: 15px;
 	transition: all 0.4s;
+	color: var(--blue, #456DBB);
 }
 .btn-close:hover{
-	fill: var(--blue, #456DBB);
 	transform: rotate(90deg);
 }
 .form-label.tor{
