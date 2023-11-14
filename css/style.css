@@ -148,6 +148,19 @@ main {
 	bottom: -85px;
 	left: -195px;
 }
+.tug{
+	margin-left: 150px;
+}
+.nav-item{
+	display: flex;
+	align-items: center;
+}
+.nav-item.item{
+	margin-left: 32px;
+}
+.nav-item>img{
+	margin-right: 4px;
+}
 
 /* main start */
 .news .news-top__title {
