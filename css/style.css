@@ -259,7 +259,6 @@ main {
 
 .pose {
 	position: relative;
-	margin-left: 30px;
 }
 
 .lock-icon {
@@ -269,6 +268,12 @@ main {
 .activee{
 	color: #456DBB;
 }
+.acctive{
+	fill: var(----blue #456DBB);
+	border-bottom: 2px solid #456DBB;
+	margin-bottom: -9px;
+}
+
 
 
 
@@ -405,6 +410,14 @@ main {
 	border: 1px solid var(--light-grey, #D0D0D0);
 	box-shadow: 0px 0px 15px 0px #CEE0FF
 }
+.rating-content{
+	width: 370px;
+	padding: 16px;
+}
+.rating{
+	color: #456DBB;
+	gap: 8px;
+}
 
 /* media query start */
 @media (min-width: 1440px) {
@@ -442,6 +455,11 @@ main {
 	}
 	.contentss .cols{
 		margin-top: 32px;
+	}	
+}
+@media (max-width:580px) {
+	.rating-content{
+		width: 300px;
 	}	
 }
 @media (max-width:550px) {

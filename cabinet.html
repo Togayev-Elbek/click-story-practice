@@ -29,8 +29,7 @@
                     <a class="navbar-brand" href="index.html">
                         <img src="images/icons/logo.svg" alt="logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -76,7 +75,7 @@
                 <h3 class="title-tit">Личный кабинет</h3>
                 <div class="cab text-center">
                     <div class="row pb-2">
-                        <div class="col-4  nav-pills">
+                        <div class="col-4  nav-pills acctive">
                             <a class="nav-link" aria-current="page" href="main-bottom">Мои достижения</a>
                         </div>
                         <div class="col-4">
@@ -90,7 +89,7 @@
                 <div class="main-bottom" id="main-bottom">
                     <h4 class="title-ti">Покупки</h4>
                     <div class="row text-center">
-                        <div class="col-2 first text-center">
+                        <div class="col-2 first text-center" data-bs-toggle="modal" data-bs-target="#rateModal">
                             <img src="images/icons/tab-logo__one.svg" alt="icon">
                             <p class="parag my-2">Название</p>
                             <div class="row-bot a">
@@ -142,7 +141,7 @@
                     </div>
                     <h4 class="title-til">Создание историй</h4>
                     <div class="row text-center">
-                        <div class="col-2 first text-center">
+                        <div class="col-2 first text-center" data-bs-toggle="modal" data-bs-target="#rateModal">
                             <img src="images/icons/tab-logo__one.svg" alt="icon">
                             <p class="parag my-2">Название</p>
                             <div class="row-bot a">
@@ -194,7 +193,7 @@
                     </div>
                     <h4 class="title-til">Подписка</h4>
                     <div class="row text-center">
-                        <div class="col-2 pose  text-center">
+                        <div class="col-2 pose  text-center" data-bs-toggle="modal" data-bs-target="#rateModal">
                             <img src="images/icons/tab-logo__one.svg" alt="icon">
                             <img class="lock-icon" src="images/icons/lock-icon.svg" alt="icon">
                             <p class="parag my-2">Название</p>
@@ -247,7 +246,7 @@
                     </div>
                     <h4 class="title-til">Ачивки</h4>
                     <div class="row text-center">
-                        <div class="col-2 pose  text-center">
+                        <div class="col-2 pose  text-center" data-bs-toggle="modal" data-bs-target="#rateModal">
                             <img src="images/icons/tab-logo__one.svg" alt="icon">
                             <img class="lock-icon" src="images/icons/lock-icon.svg" alt="icon">
                             <p class="parag my-2">Название</p>
@@ -300,7 +299,7 @@
                     </div>
                     <h4 class="title-til">Активность</h4>
                     <div class="row text-center">
-                        <div class="col-2 pose  text-center">
+                        <div class="col-2 pose  text-center" data-bs-toggle="modal" data-bs-target="#rateModal">
                             <img src="images/icons/tab-logo__one.svg" alt="icon">
                             <img class="lock-icon" src="images/icons/lock-icon.svg" alt="icon">
                             <p class="parag my-2">Название</p>
@@ -353,7 +352,7 @@
                     </div>
                     <h4 class="title-til">Другие ачивки</h4>
                     <div class="row text-center">
-                        <div class="col-2 pose  text-center">
+                        <div class="col-2 pose  text-center" data-bs-toggle="modal" data-bs-target="#rateModal">
                             <img src="images/icons/tab-logo__one.svg" alt="icon">
                             <img class="lock-icon" src="images/icons/lock-icon.svg" alt="icon">
                             <p class="parag my-2">Название</p>
@@ -444,6 +443,21 @@
                     <a href="#!">Выйти из аккаунта</a>
                 </li>
             </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="rateModal" tabindex="-1" aria-labelledby="rateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rating-content">
+        <div class="info-body">
+            <p class="mb-3 text-start">Совершите 1 покупку любого визуального элемента на сайте (в том числе и фон)</p>
+            <div class="rating d-flex align-items-center">
+                <h5>Награда:</h5>
+                <img src="images/icons/quartz-icon.svg" alt="icon">
+                <p>50</p>
+            </div>
         </div>
       </div>
     </div>
