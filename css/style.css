@@ -157,7 +157,7 @@ main {
 }
 
 .tug {
-	margin-left: 150px;
+	margin-left: 145px;
 }
 
 .nav-item {
@@ -334,7 +334,7 @@ main {
 }
 
 .modal.show .dialog {
-	width: 220px;
+	width: 276px;
 	padding: 16px;
 	flex-direction: column;
 	align-items: center;
@@ -423,5 +423,30 @@ main {
 		z-index: -1;
 		bottom: -79px;
 		left: -195px;
+	}
+	.contentss {
+		width: 750px;
+	}
+}
+@media (max-width:850px) {
+	.contentss{
+		width: 500px;
+		height: 864px;
+	} 
+	.contentss .row{
+		flex-direction: column;
+	}
+	.contentss .cols{
+		margin-top: 32px;
+	}	
+}
+@media (max-width:550px) {
+	.contentss{
+		width: 400px;
+	}
+}
+@media (max-width:450px) {
+	.contentss{
+		width: 300px;
 	}
 }
