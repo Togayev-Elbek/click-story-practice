@@ -177,8 +177,8 @@
                     <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 ">
                         <h3 class="title-par">Обратная связь</h3>
                         <h4 class="title-child">Написать в поддержку</h4>
-                        <h4 class="title-child">По поводу рекламы и сотрудничества пишите на <a
-                                class="git-btn link" href="https://elbekdevclickstory.netlify.app/">info@click-story.ru</a></h4>
+                        <h4 class="title-child">По поводу рекламы и сотрудничества пишите на <a class="git-btn link"
+                                href="https://elbekdevclickstory.netlify.app/">info@click-story.ru</a></h4>
                         <img class="vk-logo" src="images/icons/vk-logo.svg" alt="vk-logo">
                     </div>
                 </div>
@@ -270,7 +270,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="text-start">
-                    <label for="formGroupExampleInput" class="form-label tor">Введите код, отправленный на ваш e-mail</label>
+                    <label for="formGroupExampleInput" class="form-label tor">Введите код, отправленный на ваш
+                        e-mail</label>
                 </div>
                 <div class="inputs d-flex align-items-center justify-content-center mb-4">
                     <input class="modal-input__num" type="number" placeholder="1">
@@ -278,76 +279,94 @@
                     <input class="modal-input__num" type="number" placeholder="8">
                     <input class="modal-input__num" type="number" placeholder="4">
                 </div>
-                <div class="btn mb-6">
+                <div type="button" class="btn mb-6" data-bs-toggle="modal" data-bs-target="#newpassModal">
                     <button>Сменить пароль</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal" id="regisModal" tabindex="-1" aria-labelledby="regisModal" aria-hidden="true">
+    <div class="modal" id="newpassModal" tabindex="-1" aria-labelledby="newpassModal" aria-hidden="true">
         <div class="modal-dialog text-center ">
             <div class="modal-content">
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
-        <div class="modal-dialog  modal-dialog-centered">
-            <div class="modal-content contentss">
                 <div class="modal-top">
-                    <h1 class="modal-title fs-5 text-center" id="regisModalLabel">Регистрация</h1>
+                    <h1 class="modal-title fs-5" id="pasModalLabel">Введите новый пароль</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="text-start">
-                            <label for="formGroupExampleInput" class="form-label tor">Псевдоним*</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Свет Звёзд">
-                        </div>
+                    <div class="text-start">
+                        <label for="formGroupExampleInput" class="form-label tor">Пароль</label>
+                        <input type="password" class="form-control" id="formGroupExampleInput" placeholder="••••••••••••••••">
                     </div>
-                    <div class="col">
-                        <div class="mb-6 text-start">
-                            <label for="formGroupExampleInput2" class="form-label tor">Имя</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2">
-                        </div>
+                    <div class="mb-6 text-start">
+                        <label for="formGroupExampleInput2" class="form-label rot">Подтверждение пароля</label>
+                        <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="••••••••••••••••">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="text-start">
-                            <label for="formGroupExampleInput" class="form-label">E-mail*</label>
-                            <input type="email" class="form-control" id="formGroupExampleInput" placeholder="geek.tanya.hayden@gmail.com">
-                        </div>
+                    <div class="btn mb-6">
+                        <button>Сменить пароль</button>
                     </div>
-                    <div class="col cols">
-                        <div class="mb-6 text-start">
-                            <label for="formGroupExampleInput2" class="form-label">Фамилия</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Фамилия">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="text-start">
-                            <label for="formGroupExampleInput" class="form-label">Пароль*</label>
-                            <input type="password" class="form-control" id="formGroupExampleInput" placeholder="••••••••••••••••">
-                        </div>
-                    </div>
-                    <div class="col cols">
-                        <div class="mb-6 text-start">
-                            <label for="formGroupExampleInput2" class="form-label">Промо-код</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2">
-                        </div>
-                    </div>
-                </div>
-                <span class="mb-6 text-center">* Поля, обязательные для заполнения.</span>
-                <div class="btn ttns">
-                    <button class="text-center">Зарегистрироваться</button>
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="modal fade" id="regModal" tabindex="-1" aria-labelledby="regModalLabel" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content contentss">
+                    <div class="modal-top">
+                        <h1 class="modal-title fs-5 text-center" id="regisModalLabel">Регистрация</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-start">
+                                <label for="formGroupExampleInput" class="form-label tor">Псевдоним*</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Свет Звёзд">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-6 text-start">
+                                <label for="formGroupExampleInput2" class="form-label tor">Имя</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-start">
+                                <label for="formGroupExampleInput" class="form-label">E-mail*</label>
+                                <input type="email" class="form-control" id="formGroupExampleInput"
+                                    placeholder="geek.tanya.hayden@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col cols">
+                            <div class="mb-6 text-start">
+                                <label for="formGroupExampleInput2" class="form-label">Фамилия</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="Фамилия">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-start">
+                                <label for="formGroupExampleInput" class="form-label">Пароль*</label>
+                                <input type="password" class="form-control" id="formGroupExampleInput"
+                                    placeholder="••••••••••••••••">
+                            </div>
+                        </div>
+                        <div class="col cols">
+                            <div class="mb-6 text-start">
+                                <label for="formGroupExampleInput2" class="form-label">Промо-код</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2">
+                            </div>
+                        </div>
+                    </div>
+                    <span class="mb-6 text-center">* Поля, обязательные для заполнения.</span>
+                    <div class="btn ttns">
+                        <button class="text-center">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
