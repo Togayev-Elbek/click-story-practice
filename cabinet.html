@@ -29,7 +29,9 @@
                     <a class="navbar-brand" href="index.html">
                         <img src="images/icons/logo.svg" alt="logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,7 +47,7 @@
                             </li>
                         </ul>
                         <form class="d-flex">
-                            <button type="button" class="btn tug" data-bs-toggle="modal" data-bs-target="#menuModal">Создать историю</button>
+                            <button type="button" class="btn tug">Создать историю</button>
                         </form>
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item item">
@@ -60,7 +62,7 @@
                                 <img src="images/icons/quartz-icon.svg" alt="icons">
                                 <p class="book-icon__title">250</p>
                             </li>
-                            <li class="nav-item item">
+                            <li class="nav-item item" data-bs-toggle="modal" data-bs-target="#menuModal">
                                 <img src="images/icons/contact-icon.svg" alt="icons">
                             </li>
                         </ul>
@@ -89,7 +91,8 @@
                 <div class="main-bottom" id="main-bottom">
                     <h4 class="title-ti">Покупки</h4>
                     <div class="row text-center">
-                        <div class="col-2 first text-center" data-bs-toggle="modal" data-bs-target="#rateModal">
+                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-3 col-sm-4 first text-center"
+                            data-bs-toggle="modal" data-bs-target="#rateModal">
                             <img src="images/icons/tab-logo__one.svg" alt="icon">
                             <p class="parag my-2">Название</p>
                             <div class="row-bot a">
@@ -98,7 +101,7 @@
                             </div>
                             <img class="bot-logo" src="images/icons/bot-logo.svg" alt="logo">
                         </div>
-                        <div class="col-2 pose  text-center">
+                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-3 pose  text-center">
                             <img src="images/icons/tab-logo__one.svg" alt="icon">
                             <img class="lock-icon" src="images/icons/lock-icon.svg" alt="icon">
                             <p class="parag my-2">Название</p>
@@ -108,7 +111,7 @@
                                 <img src="images/icons/bot-img__two.svg" alt="">
                             </div>
                         </div>
-                        <div class="col-2 pose  text-center">
+                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-3 pose  text-center">
                             <img src="images/icons/tab-logo__one.svg" alt="icon">
                             <img class="lock-icon" src="images/icons/lock-icon.svg" alt="icon">
                             <p class="parag my-2">Название</p>
@@ -118,7 +121,7 @@
                                 <img src="images/icons/bot-img__two.svg" alt="">
                             </div>
                         </div>
-                        <div class="col-2 pose  text-center">
+                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-3 pose  text-center">
                             <img src="images/icons/tab-logo__one.svg" alt="icon">
                             <img class="lock-icon" src="images/icons/lock-icon.svg" alt="icon">
                             <p class="parag my-2">Название</p>
@@ -128,7 +131,7 @@
                                 <img src="images/icons/bot-img__two.svg" alt="">
                             </div>
                         </div>
-                        <div class="col-2 pose  text-center">
+                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-3 pose  text-center">
                             <img src="images/icons/tab-logo__one.svg" alt="icon">
                             <img class="lock-icon" src="images/icons/lock-icon.svg" alt="icon">
                             <p class="parag my-2">Название</p>
@@ -417,51 +420,52 @@
             </div>
         </main>
         <!-- ==================modal========================= -->
-  
-  <!-- Modal -->
-  <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
-    <div class="modal-dialog dialog modal-dialog-centered">
-      <div class="modal-content contentt">
-        <div class="modal-body">
-            <ul class="modal-title" id="menuModalLabel">
-                <li class="nav-itemm">
-                    <a href="#!">Моя страница</a>
-                </li>
-                <li class="nav-itemm">
-                    <a href="#!">Черновики</a>
-                </li>
-                <li class="nav-itemm">
-                    <a href="#!">Мои покупки</a>
-                </li>
-                <li class="nav-itemm">
-                    <a href="#!">Личный кабинет</a>
-                </li>
-                <li class="nav-itemm">
-                    <a href="#!">Настройки</a>
-                </li>
-                <li class="nav-itemm">
-                    <a href="#!">Выйти из аккаунта</a>
-                </li>
-            </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="modal fade" id="rateModal" tabindex="-1" aria-labelledby="rateModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content rating-content">
-        <div class="info-body">
-            <p class="mb-3 text-start">Совершите 1 покупку любого визуального элемента на сайте (в том числе и фон)</p>
-            <div class="rating d-flex align-items-center">
-                <h5>Награда:</h5>
-                <img src="images/icons/quartz-icon.svg" alt="icon">
-                <p>50</p>
+        <!-- Modal -->
+        <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+            <div class="modal-dialog dialog modal-dialog-centered">
+                <div class="modal-content contentt">
+                    <div class="modal-body">
+                        <ul class="modal-title" id="menuModalLabel">
+                            <li class="nav-itemm">
+                                <a href="#!">Моя страница</a>
+                            </li>
+                            <li class="nav-itemm">
+                                <a href="#!">Черновики</a>
+                            </li>
+                            <li class="nav-itemm">
+                                <a href="#!">Мои покупки</a>
+                            </li>
+                            <li class="nav-itemm">
+                                <a href="#!">Личный кабинет</a>
+                            </li>
+                            <li class="nav-itemm">
+                                <a href="#!">Настройки</a>
+                            </li>
+                            <li class="nav-itemm">
+                                <a href="#!">Выйти из аккаунта</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
-    </div>
-  </div>
+
+        <div class="modal fade" id="rateModal" tabindex="-1" aria-labelledby="rateModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rating-content">
+                    <div class="info-body">
+                        <p class="mb-3 text-start">Совершите 1 покупку любого визуального элемента на сайте (в том числе
+                            и фон)</p>
+                        <div class="rating d-flex align-items-center">
+                            <h5>Награда:</h5>
+                            <img src="images/icons/quartz-icon.svg" alt="icon">
+                            <p>50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <!-- footer section start -->
