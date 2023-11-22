@@ -545,6 +545,9 @@ main {
 	color: #456DBB;
 	gap: 8px;
 }
+.extra{
+	padding: 17px 18px;
+}
 
 /* media query start */
 @media (min-width: 1440px) {
