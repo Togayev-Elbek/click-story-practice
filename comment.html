@@ -96,7 +96,7 @@
                                         <img src="images/icons/quartz-icon.svg" alt="icon">
                                         <p class="rate-number">250</p>
                                     </div>
-                                    <div class="btn">
+                                    <div class="btn" data-bs-toggle="modal" data-bs-target="#kosheModal">
                                         <button class="but">Пополнить</button>
                                     </div>
                                 </div>
@@ -244,6 +244,22 @@
                         <img src="images/icons/switcher.svg" alt="icon">
                     </div>
                     <p class="two-tab__par">Подписка продлевается в первую очередь за валюту сайта. Если суммы будет <br> не хватать, остаток спишется с карты.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="kosheModal" tabindex="-1" aria-labelledby="kosheModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="activmodal-center">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <p class="rate-number mb-6">Активна</p>
+                    <div class="wallet-content d-flex align-items-center justify-content-between">
+                        <input class="two-input" type="number" name="number" placeholder="300">
+                        <div class="btn"  data-bs-toggle="modal" data-bs-target="#activModal">
+                            <button class="but">Пополнить</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

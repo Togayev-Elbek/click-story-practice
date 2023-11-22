@@ -287,7 +287,9 @@ main {
 	border-radius: 5px;
 	background: var(--light-blue, #EBF2FF);
 }
-
+.wallet-content{
+	gap: 16px;
+}
 
 .but {
 	color: var(--dark-grey, #333);
@@ -396,6 +398,7 @@ main {
 .input-top__title {
 	margin-bottom: 24px;
 }
+
 
 
 
