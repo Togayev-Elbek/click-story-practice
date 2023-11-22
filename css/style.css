@@ -548,7 +548,9 @@ main {
 .extra{
 	padding: 17px 18px;
 }
-
+.butn{
+	
+}
 /* media query start */
 @media (min-width: 1440px) {
 
