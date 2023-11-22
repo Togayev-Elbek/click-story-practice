@@ -108,7 +108,7 @@
                             <div class="col-xxl-4 col-xl-4 col-lg-4 one-tab">
                                 <div class="wallet-content d-flex align-items-center justify-content-between">
                                     <p class="rate-number">390 ₽/мес.</p>
-                                    <div class="btn">
+                                    <div class="btn"  data-bs-toggle="modal" data-bs-target="#activModal">
                                         <button class="but">Пополнить</button>
                                     </div>
                                 </div>
@@ -215,10 +215,40 @@
             </div>
         </footer>
     </div>
+    <!-- ================Modal================ -->
+    <div class="modal fade" id="activModal" tabindex="-1" aria-labelledby="activModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rating-content">
+                <div class="activmodal-center">
+                    <div class="wallet-content d-flex align-items-center justify-content-between mb-3">
+                        <p class="rate-number">Активна</p>
+                        <div class="btn"  data-bs-toggle="modal" data-bs-target="#activModal">
+                            <button class="but">Пополнить</button>
+                        </div>
+                    </div>
+                    <p class="two-tab__par">Стоимость подписки: 390 ₽ <br> Дата следующего списания: 24.05.2023</p>
+                    <div class="two-tab__title d-flex align-items-center">
+                        <img class="two-tab__img" src="images/icons/check-line.svg" alt="icon">
+                        <p class="two-tab__parag">Доступ ко всем визуальным элементам на период подписки</p>
+                    </div>
+                    <div class="two-tab__title d-flex align-items-center mb-2">
+                        <img class="two-tab__img" src="images/icons/check-line.svg" alt="icon">
+                        <p class="two-tab__para">Выделение аватара среди других пользователей</p>
+                    </div>
+                    <div class="two-tab__title d-flex align-items-center mb-4">
+                        <img class="two-tab__img" src="images/icons/check-line.svg" alt="icon">
+                        <p class="two-tab__para">Новые достижения</p>
+                    </div>
+                    <div class="content-center d-flex align-items-center justify-content-between">
+                        <p>Списывать кварцы</p>
+                        <img src="images/icons/switcher.svg" alt="icon">
+                    </div>
+                    <p class="two-tab__par">Подписка продлевается в первую очередь за валюту сайта. Если суммы будет <br> не хватать, остаток спишется с карты.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     
-
-
-
      <!-- bootstrap js -->
     <script src="libs/bootstrap.min.js"></script>
 </body>
